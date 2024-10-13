@@ -3,14 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css"> <!-- Mal ligado el css -->
     <title>APIs</title>
 </head>
 <body>
-    <p class="name"></p>
-    <p class="blog"></p>
+  <div class="wrapper">
+    <h1>Insertar usuario de GitHub</h1>
+    <label for="username">Nombre de usuario:</label> <!-- Se agrego el titulo -->
+    <input type="text" id="username" placeholder="Escribe el nombre de usuario de GitHub">
+    <button id="search" type="button" >Buscar</button>
 
-  <script src="../assets/js/app.js"></script>
+    <div class="info" id="info">
+        <h2>Información del Usuario</h2>
+        <table class="table"> <!-- Se agrego la info en una tabla y se agregaron clases -->
+            <tr>
+                <th>Nombre:</th>
+                <td class="name"></td>
+            </tr>
+            <tr>
+                <th>Blog:</th>
+                <td><a href="#" class="blog" target="_blank"></a></td>
+            </tr>
+            <tr>
+                <th>Ubicación:</th>
+                <td class="location"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+  <script src="/assets/js/app.js"></script> <!-- Mal ligado el js -->
 </body>
 </html>
